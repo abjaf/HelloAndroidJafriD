@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloAndroid</string>
+    <string name="infoudacity">Udacity\n2465 Latham St\nMountain View, CA 94043\n650-555-5555</string>
+    <string name="atyourdis">Links to your resources:</string>
+    <string name="slacktext">Slack - chat with your peers</string>
+    <string name="forumtext">Forum - structured discussions</string>
+    <string name="btntext">to the coding lessons</string>
+</resources>

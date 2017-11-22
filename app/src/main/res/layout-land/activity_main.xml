@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abdul.helloandroid.MainActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/igen" />
+
+            <TextView
+                android:id="@+id/atdis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="@string/atyourdis"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/firstimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/atdis"
+                android:layout_marginTop="@dimen/upmar"
+                android:layout_toLeftOf="@id/centerstringlnd"
+                android:src="@drawable/slack"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_centerHorizontal="true"
+                android:id="@+id/centerstringlnd"
+                android:layout_marginHorizontal="50dp"/>
+            <ImageView
+                android:id="@+id/secondimg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/atdis"
+                android:layout_toRightOf="@id/centerstringlnd"
+                android:layout_marginTop="@dimen/upmar"
+                android:src="@drawable/forum"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/btntext"
+                android:autoLink="web"
+                android:background="#02667e"
+                android:textColor="#fff"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="5dp"
+                android:fontFamily="@font/opensanslight"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/slacktext"
+                android:layout_marginTop="@dimen/upmar"
+                android:textColor="#fff"
+                android:id="@+id/slcktext"
+                android:layout_below="@id/firstimg"
+                android:layout_toLeftOf="@id/centerstringlnd"
+                android:fontFamily="@font/opensanslight"
+                android:textAllCaps="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forumtext"
+                android:id="@+id/frmtext"
+                android:layout_marginTop="@dimen/upmar"
+                android:textColor="#fff"
+                android:layout_below="@id/secondimg"
+                android:layout_toRightOf="@id/centerstringlnd"
+                android:textAlignment="center"
+                android:fontFamily="@font/opensanslight"
+                android:textAllCaps="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/igen3"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/infoudacity"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:fontFamily="@font/opensanslight"
+                android:layout_toRightOf="@id/centerstring"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text=" "
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:id="@+id/centerstring"
+                />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/udacity_logo"
+                android:id="@+id/loggan"
+                android:layout_toLeftOf="@id/centerstring"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
